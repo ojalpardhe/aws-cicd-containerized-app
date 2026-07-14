@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-monitor
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-monitor
+  template:
+    metadata:
+      labels:
+        app: flask-monitor
+    spec:
+      containers:
+      - name: flask-monitor
+        image: ojalpardhe/flask-monitor:v1
+        ports:
+        - containerPort: 5000

@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 Flask==3.0.3
-=======
-Flask==3.0.3
->>>>>>> c7c1cf4d96aa3aa57806fae83e335deeb6c244bb
